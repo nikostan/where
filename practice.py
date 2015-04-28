@@ -7,7 +7,7 @@ print ('hello\nworld')
 # hello
 # world
 print ('''hello
-... \tworld''')
+\tworld''')
 # hello
 # 	world
 print ('go to \\news')
