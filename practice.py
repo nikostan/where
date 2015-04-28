@@ -1,4 +1,9 @@
 # /usr/bin/python
+
+""""This is how
+to do
+multi-line comments"""
+
 print ("it's nice " + 'to be "or not to be"')
 # it's nice to be "or not to be"
 print ('where aren\'t you?')
