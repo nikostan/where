@@ -1,3 +1,5 @@
+# /usr/bin/python
+
 >>> print ("it's nice " + 'to be "or not to be"')
 it's nice to be "or not to be"
 
