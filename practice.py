@@ -42,11 +42,12 @@ def function_input(x, y, z):
 a = function_input(1, 2, 3)
 print 'input %s' % a
 ######################
-# From the directory where the .py file is, run <python nikoprint.py>:
-# hello
-# world
-# !
-# stop upgrading on cx01
-# start upgrade on bx03
-# 6
-# input 0
+"""From the directory where the .py file is, run <python nikoprint.py>:
+hello
+world
+!
+stop upgrading on cx01
+start upgrade on bx03
+6
+input 0"""
+######################
