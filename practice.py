@@ -1,5 +1,5 @@
-# /usr/bin/python
-
+#!/usr/bin/python
+######################
 """"This is how
 to do
 multi-line comments"""
@@ -17,3 +17,36 @@ print ('''hello
 # 	world
 print ('go to \\news')
 # go to \news
+######################
+def nikoprint():
+  print 'hello'
+  print 'world'
+  print '!'
+nikoprint()
+#
+def routerupgrade(router):
+  toupgrade = ['bx01', 'bx02', 'bx03']
+  if router in toupgrade:
+    print 'start upgrade on %s' % router
+  else:
+    print 'stop upgrading on %s' % router
+routerupgrade('cx01')
+routerupgrade('bx03')
+#
+def function(x, y, z):
+   print x + y + z
+function(1, 2, 3)
+#
+def function_input(x, y, z):
+   return x + y - z
+a = function_input(1, 2, 3)
+print 'input %s' % a
+######################
+# From the directory where the .py file is, run <python nikoprint.py>:
+# hello
+# world
+# !
+# stop upgrading on cx01
+# start upgrade on bx03
+# 6
+# input 0
