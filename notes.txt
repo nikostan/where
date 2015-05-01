@@ -1,0 +1,181 @@
+.........................
+>>> x = 1
+>>> type(x)
+<type 'int'>
+>>> x = '1'
+>>> type(x)
+<type 'str'>
+>>> dir(x)
+['__add__', '__class__', '__contains__', '__delattr__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__getslice__', '__gt__', '__hash__', '__init__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '_formatter_field_name_split', '_formatter_parser', 'capitalize', 'center', 'count', 'decode', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'index', 'isalnum', 'isalpha', 'isdigit', 'islower', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+.........................
+>>> x.capitalize()
+'1'
+>>> x = 'i'
+>>> x.capitalize()
+'I'
+.........................
+>>> class C(object):
+...   attribute = 'this is an attribute'
+...   def method(self):
+...     return 'this is a method'
+... ^D
+
+>>> z = C()
+>>> print z.attribute
+this is an attribute
+>>> print z.method()
+this is a method
+>>> print z.attribute
+this is an attribute
+>>> print z.attribute()
+.........................
+>>> def ManyDonuts(count):
+...   try:
+...     result = 'Donut' * int(count)
+...   except ValueError:
+...     result = ''
+...   return result
+...
+
+>>> import sys
+
+>>> res = s + s + s
+
+>>> def Repeat(s, exclaim):
+...   res = s + s + s
+...   if exclaim:
+...     res = res + '!!!'
+...   return res
+...
+
+>>> Repeat('1', '1')
+'111!!!'
+.........................
+>>> import re
+
+>>> re.search (r'\w+', 'niko tsankov').group(0)
+'niko'
+
+>>> re.match (r'\w+', 'niko tsankov').group(0)
+'niko'
+
+>>> re.search (r't\w+', 'niko tsankov').group(0)
+'tsankov'
+
+>>> m=re.search (r't\w+', 'niko tsankov')
+>>> m.group(0)
+'tsankov'
+
+>>> re.search (r'(\w) (t\w+)', 'niko tsankov').group(2)
+'tsankov'
+>>> re.search (r'(\w) (t\w+)', 'niko tsankov').group(1)
+'o'
+>>> re.search (r'(\w+) (t\w+)', 'niko tsankov').group(1)
+'niko'
+>>> re.search (r'(\w+) (t\w+)', 'niko tsankov').group(1)
+'niko'
+.........................
+>>> x = [1, 2, 3]
+>>> x.append(1)
+>>> x
+[1, 2, 3, 1]
+>>> y = x.pop()
+>>> y
+1
+>>> x
+[1, 2, 3]
+>>> y = x.pop(1)
+>>> y
+2
+>>> x
+[1, 3]
+>>> y = x.pop(0)
+>>> y
+1
+>>> x
+[3]
+.........................
+>>> x = ['google', 'is', 'hell']
+>>> y = 'niko'.join(x)
+>>> y
+'googlenikoisnikohell'
+
+>>> y = ','.join(x)
+>>> y
+'google,is,hell'
+
+>>> y = "'".join(x)
+>>> y
+"google'is'hell"
+
+>>> z = 'yes, sir'
+>>> y = z.join(x)
+>>> y
+'googleyes, sirisyes, sirhell'
+
+>>> x.insert(0, z)
+>>> x
+['yes, sir', 'google', 'is', 'hell']
+
+>>> y = " ".join(x)
+>>> y
+'yes, sir google is hell'
+.........................
+>>> x = 'xe-1/1 xe-1/9 xe1/10'
+>>> y = x.split(' ')
+>>> y
+['xe-1/1', 'xe-1/9', 'xe1/10']
+>>> for z in y:
+...   print 'interface %s' % z
+...
+interface xe-1/1
+interface xe-1/9
+interface xe1/10
+.........................
+>>> def test(x):
+...   print 'result'
+...   return x+1
+...   print 'result2'
+...
+>>> test(2)
+result
+3
+>>> test(10)
+result
+11
+
+>>> def test2(x):
+...   if x == 2:
+...     print 'yes'
+...   else:
+...     print 'no'
+...
+>>> test2(2)
+yes
+>>> test2(1)
+no
+
+>>> def check(x):
+...   if x != 2:
+...     print 'yes'
+...   elif x <=2:
+...     print 'no'
+...
+>>> check(1)
+yes
+>>> check(3)
+yes
+>>> check(2)
+no
+
+>>> def check(x):
+...   if x < 2 or x > 0:
+...     print '1'
+...   elif x > 2 and x < 4:
+...     print '3'
+...
+>>> check(1)
+1
+>>> check(3)
+1
+.........................
