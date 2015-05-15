@@ -51,3 +51,22 @@ start upgrade on bx03
 6
 input 0"""
 ######################
+name = raw_input("What is your name?")
+What is your name?Niko
+quest = raw_input("What is your quest?")
+What is your quest?Art
+color = raw_input("What is your favorite color?")
+What is your favorite color?Blue
+
+print "Ah, so your name is %s, your quest is %s, " "and your favorite color is %s." % (name, quest, color)
+'Ah, so your name is Niko, your quest is Art, and your favorite color is Blue.'
+######################
+meal = 44.50
+tax = 6.75/100
+tip = 15.0/100
+meal = meal + meal * tax
+total = meal + meal * tip
+
+print total
+54.6293125
+######################
