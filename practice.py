@@ -22,6 +22,7 @@ def nikoprint():
   print 'hello'
   print 'world'
   print '!'
+
 nikoprint()
 #
 def routerupgrade(router):
@@ -75,15 +76,6 @@ print total
 
 from datetime import datetime
 now = datetime.now()
-
-print '%s-%s-%s' % (now.year, now.month, now.day)
-2015-5-18
-
-print '%s/%s/%s' % (now.month, now.day, now.year)
-5/18/2015
-
-print '%s:%s:%s' % (now.hour, now.minute, now.second)
-13:43:50
 
 print '%s/%s/%s %s:%s:%s' % (now.month, now.day, now.year, now.hour, now.minute, now.second)
 5/18/2015 20:19:53
