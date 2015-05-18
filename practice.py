@@ -84,4 +84,10 @@ print '%s/%s/%s' % (now.month, now.day, now.year)
 
 print '%s:%s:%s' % (now.hour, now.minute, now.second)
 13:43:50
+#
+niko = datetime.now()
+print niko
+2015-05-18 14:07:03.289378
+print '%s:%s:%s' % (niko.hour, niko.minute, niko.second)
+14:7:3
 ######################
