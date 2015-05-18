@@ -70,3 +70,18 @@ total = meal + meal * tip
 print total
 54.6293125
 ######################
+# FU = 'Function is Universal'
+# 'datetime' is a function
+
+from datetime import datetime
+now = datetime.now()
+
+print '%s-%s-%s' % (now.year, now.month, now.day)
+2015-5-18
+
+print '%s/%s/%s' % (now.month, now.day, now.year)
+5/18/2015
+
+print '%s:%s:%s' % (now.hour, now.minute, now.second)
+13:43:50
+######################
