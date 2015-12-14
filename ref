@@ -1,2 +1,2 @@
 http://stackoverflow.com/questions/9271712/difference-between-multiple-ifs-and-elifs-python: 
-Multiple if's means your code would go and check all the if conditions, where as in case of elif, if one if condition satisfies it would not check other conditions.
+    Multiple if's means your code would go and check all the if conditions, where as in case of elif, if one if condition satisfies it would not check other conditions.
